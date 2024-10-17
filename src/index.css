@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Noticia Text", sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'DS Walbaumfraktur';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/public/fonts/DSWalbaumfraktur.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Chomsky';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/public/fonts/Chomsky.otf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Juice ITC';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/public/fonts/JUICE___.TTF);
+  }
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.main-comp {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #a57b4c33;
+  /* Light brown with low opacity */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a57b4c99;
+  /* Brown color with more opacity */
+  border-radius: 10px;
+  /* Rounded edges for a smoother look */
+  border: 2px solid transparent;
+  /* Add a transparent border to give space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a57b4ccc;
+  /* Slightly darker on hover */
+}
+
+/* Optional: Firefox scrollbar styling */
+.scrollbar {
+  scrollbar-width: thin;
+  /* Thinner scrollbar */
+  scrollbar-color: rgba(165, 123, 76, 0.6) rgba(165, 123, 76, 0.2);
+  /* Thumb and track color */
+}
